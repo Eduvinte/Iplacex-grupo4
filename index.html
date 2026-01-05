@@ -9,29 +9,27 @@
 <body>
 
     <header class="main-header">
-        <!-- Logo -->
-        <div>
+        <div class="brand">
             <img src="img/logo.png" alt="Logo LS45 Automotriz" class="logo">   
+            <div class="header-title">
+                <h1>LS45 Automotriz</h1>
+                <p>Venta de vehículos, crédito y servicios automotrices en Chile</p>
+            </div>
         </div>
-        <!-- Encabezado principal -->
-    <div class="header-title">
-        <h1>LS45 Automotriz</h1>
-        <p>Venta de vehículos, crédito y servicios automotrices en Chile</p>
-        </div>
-         <!-- Navigation -->
-        <div>
-            <ul>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú de navegación">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="main-nav">
+            <ul class="nav-list">
                 <li><a href="#descripcion-empresa">Inicio</a></li>
                 <li><a href="#mision-vision">Nosotros</a></li>
                 <li><a href="#info-complementaria">Servicios</a></li>
                 <li><a href="#galeria-imagenes">Contacto</a></li>
             </ul>
-        </div>
-    </header>
-
-    
-    <nav class="main-nav">
         </nav>
+    </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="main-content">
@@ -185,5 +183,25 @@
             © 2025 LS45 Automotriz – Todos los derechos reservados
         </p>
     </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('.main-nav');
+        const navLinks = document.querySelectorAll('.nav-list a');
+
+        if (navToggle && nav) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('is-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
 </body>
 </html>
