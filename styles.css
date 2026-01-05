@@ -382,3 +382,44 @@ body {
   margin-top: 8px;
   font-size: 14px;
 }
+
+
+.main-footer {
+    width: 100%;
+    background-color: #0f172a;
+    color: #fff !important;
+    font-size: 16px;
+    padding: 30px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.footer-title {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.social-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.social-container img {
+    width: 20px;
+}
+.social-links a {
+    color: #fff;
+    font-size: 16px;
+}
