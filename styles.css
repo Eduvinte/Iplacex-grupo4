@@ -21,6 +21,16 @@ body {
   gap: 30px;
 }
 
+/* Títulos */
+#mision-vision h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+  color: #222;
+}
+
 /* Tarjetas (Mision y Vision) */
 #mision-vision .vision,
 #mision-vision .mision {
@@ -91,18 +101,6 @@ body {
     margin: 10px;
     margin-top: 20px;
     text-align: center;
-}
-
-
-
-/* Títulos */
-#mision-vision h2 {
-  display: inline-block;
-  position: relative;
-  font-size: 24px;
-  margin-bottom: 16px;
-  padding-bottom: 6px;
-  color: #222;
 }
 
 /* GALERÍA */
