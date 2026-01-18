@@ -1,69 +1,36 @@
-Get PRO Here:
-https://templatesjungle.gumroad.com/l/waggy-pet-shop-ecommerce-html-website-template
+# LS45 Automotriz - Landing Page
 
-It is a free HTML CSS template by TemplatesJungle.com
-You can use this template as a starter template and start building as you require.
+Este repositorio contiene el código fuente de una **Landing Page** desarrollada como proyecto universitario para la empresa "LS45 Automotriz". Es un sitio web estático enfocado en la promoción de servicios automotrices.
 
-The code is consistent and can be easily maintained as we have followed a good coding standards. We want everyone to easily understand it and modify it according to their requirement. As the main goal of providing these templates is to give you something to work on before even starting.
+## 📋 Descripción del Proyecto
 
+El sitio está diseñado para ser informativo y responsivo (adaptable a móviles), presentando una interfaz limpia para la venta de vehículos, gestión de créditos y seguros automotrices.
 
-FREE FOR BOTH PERSONAL AND COMMERCIAL USE
+### Secciones Principales:
+* **Inicio:** Banner principal con slider interactivo.
+* **Nosotros:** Historia y trayectoria de la automotora (17+ años de experiencia).
+* **Misión y Visión:** Valores corporativos.
+* **Servicios:** Tarjetas informativas sobre consignación, crédito, importación y seguros.
+* **Galería:** Muestra visual de trabajos y vehículos.
+* **Contacto:** Enlaces a redes sociales y WhatsApp.
 
-This HTML Template is provided by TemplatesJungle.com and is free to use in both personal and commercial projects as long as you don't remove our credit link in the footer.
+## 🚀 Tecnologías Utilizadas
 
-However, you can remove the credit link by paying for No Attribution version of the template.
+* **HTML5:** Estructura semántica.
+* **CSS3:** Estilos personalizados (`style.css`).
+* **Bootstrap 5.3:** Framework para la maquetación y diseño responsivo.
+* **Swiper.js:** Librería para el carrusel de imágenes (Slider).
+* **Iconify:** Iconografía vectorial.
+* **Google Fonts:** Tipografías 'Montserrat' y 'Chilanka'.
 
+## 📂 Estructura de Archivos
 
-RIGHTS
-
-You are allowed to use it in your personal projects and commercial projects.
-
-You can modify and sell it to your clients.
-
-
-PROHIBITIONS
-
-You cannot remove the credit link which links back to templatesjungle.com.
-
-You are not permitted to resell or redistribute (paid or free) as it is. 
-
-You cannot use it to build premium templates, themes or any other goods to be sold on marketplaces.
-
-If you want to share the free resource in your blog, you must point it to original TemplatesJungle.com resource page. 
-
-You cannot host the download file in your website.
-
-
-SUPPORT
-
-You can contact us to report any bugs and errors in the template. We will try and fix them immediately although it's a free resource.
-
-Feel free to let us know about what you want to see in the future downloads. We will definitely give it a thought while creating our next freebie.
-
-
-CREDITS & REFERENCES
-
-https://getbootstrap.com/
-
-Stock Photos
-https://unsplash.com/
-https://www.freepik.com/
-https://www.pexels.com/
-
-Fonts
-Google fonts
-https://fonts.google.com/
-
-Icons
-https://icomoon.io/
-
-JQuery Plugins
-
-Swiper Slider - https://swiperjs.com/
-Slick Slider - https://kenwheeler.github.io/slick/
-Chocolat.js – a Free Lightbox Plugin -http://chocolat.insipi.de/
-Magnific Lightbox - https://github.com/dimsemenov/Magnific-Popup
-
-Thanks for downloading from TemplatesJungle.com !
-
-
+```text
+├── css/
+│   ├── style.css       # Estilos propios
+│   └── vendor.css      # Estilos de librerías
+├── img/                # Imágenes del sitio (logo, banners, galería)
+├── js/
+│   ├── script.js       # Lógica personalizada
+│   └── plugins.js      # Plugins adicionales
+└── index.html          # Archivo principal
