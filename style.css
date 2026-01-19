@@ -418,6 +418,48 @@ a.categories-item:hover iconify-icon.category-icon {
     color: #ffffff;
 }
 
+@media screen and (max-width: 600px) {
+    #banner .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .banner-title {
+        font-size: clamp(1.35rem, 5vw, 1.9rem);
+        line-height: 1.2;
+        word-break: break-word;
+        hyphens: auto;
+        margin-bottom: 1rem;
+        max-width: 100%;
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
+    }
+
+    #banner .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #banner .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .banner-content {
+        row-gap: 1.5rem;
+    }
+
+    .banner-title {
+        font-size: clamp(1.25rem, 4.5vw, 1.7rem);
+    }
+
+    #banner .btn {
+        font-size: 0.95rem;
+    }
+}
+
 /* pet clothing */
 .card {
     --bs-card-inner-border-radius: none;
@@ -767,19 +809,77 @@ Single Product section style start
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding: 0 2rem;
+    gap: 1rem;
 }
 
 .numbers {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .subheader h5 {
     color: #FFF !important;
     margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .subheader {
+        height: auto;
+        padding: 0.4rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .numbers {
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .subheader h5 {
+        font-size: 0.85rem;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .menu-list > li > a {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .main-logo img {
+        max-height: 44px;
+    }
+
+    .services-container,
+    .gallery-container,
+    .ourbusiness-container {
+        width: 100%;
+        padding: 0.35rem 0.6rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1rem;
+    }
+
+    .gallery-image {
+        max-height: 220px;
+        height: auto !important;
+    }
+
+    /* Galería: apilar en mobile */
+    .instagram-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0.5rem 0;
+    }
 }
 
 .support-box>.call-us-container>span {
@@ -810,7 +910,7 @@ Single Product section style start
 .gallery-container {
     width: fit-content;
     margin: 0 auto;
-    padding: 1rem 10rem;
+    padding: 0.75rem 3rem;
     background-color: whitesmoke;
     border-radius: 1.5rem;
     box-shadow: 0 0 0.4rem 0.1rem var(--grey-color);
@@ -820,7 +920,7 @@ Single Product section style start
 .services-container {
     width: fit-content;
     margin: 0 auto;
-    padding: 1rem 10rem;
+    padding: 0.75rem 3rem;
     background-color: whitesmoke;
     border-radius: 1.5rem;
     box-shadow: 0 0 0.4rem 0.1rem var(--grey-color);
@@ -828,10 +928,21 @@ Single Product section style start
 
 }
 
+.services-title,
+.gallery-title,
+.ourbusiness-title {
+    font-size: clamp(1rem, 2.8vw, 1.6rem);
+    line-height: 1.1;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    font-style: italic;
+}
+
 .ourbusiness-container {
     width: fit-content;
     margin: 0 auto;
-    padding: 1rem 10rem;
+    padding: 0.75rem 3rem;
     background-color: whitesmoke;
     border-radius: 1.5rem;
     box-shadow: 0 0 0.4rem 0.1rem var(--grey-color);
@@ -840,11 +951,15 @@ Single Product section style start
 }
 
 .ourbusiness-container h2.ourbusiness-title {
-    font-size: 50px;
     font-style: italic;
     font-weight: bold;
-    margin: 10px;
     text-align: center;
+}
+
+.mission-card h2,
+.vision-card h2 {
+    font-size: clamp(1.35rem, 4vw, 2rem);
+    line-height: 1.25;
 }
 
 .col-md-3>.card>.card-title {
@@ -863,8 +978,11 @@ Single Product section style start
 }
 
 .gallery-image {
-    height: 300px !important;
-    width: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 0.75rem;
 }
 
 .menu-list {
@@ -886,6 +1004,6 @@ Single Product section style start
 }
 
 .main-logo img {
-    max-height: 100px;
+    max-height: 56px;
     width: auto;
 }
