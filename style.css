@@ -927,7 +927,6 @@ Single Product section style start
     background-color: whitesmoke;
     border-radius: 1.5rem;
     box-shadow: 0 0 0.4rem 0.1rem var(--grey-color);
-    margin-bottom: 8%;
 }
 
 .services-container {
@@ -992,10 +991,11 @@ Single Product section style start
 
 .gallery-image {
     width: 100% !important;
-    height: auto !important;
-    max-height: 320px;
-    object-fit: cover;
+    height: 320px !important;      
+    object-fit: contain !important;
+    background-color: #f8f9fa;     
     border-radius: 0.75rem;
+    max-height: none !important;    
 }
 
 .menu-list {
