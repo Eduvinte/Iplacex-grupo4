@@ -816,10 +816,23 @@ Single Product section style start
 .numbers {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
     flex-wrap: wrap;
 }
+.numbers > img {
+    width: 20px;
+}
 
+.numbers > h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin:0 20px 0 5px !important;
+}
+
+.subheader-title > h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin:0 20px 0 5px !important;
+}
 .subheader h5 {
     color: #FFF !important;
     margin: 0;
