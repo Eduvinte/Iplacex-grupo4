@@ -34,3 +34,6 @@ El sitio está diseñado para ser informativo y responsivo (adaptable a móviles
 │   ├── script.js       # Lógica personalizada
 │   └── plugins.js      # Plugins adicionales
 └── index.html          # Archivo principal
+
+
+Link de netlify: https://eclectic-sunburst-85e2c4.netlify.app/
